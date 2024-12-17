@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Booking Container */
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.react-calendar {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.react-calendar__tile {
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.react-calendar__tile--active {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.react-calendar__tile--active:hover {
+    background-color: #0056b3;
+}
+
+/* Slots Container */
+.slots-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.slots-container button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 120px;
+}
+
+.slots-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.slots-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.no-slots-message {
+    color: #555;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .slots-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+
+    .react-calendar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .slots-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 5px;
+    }
+
+    .slots-container button {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .react-calendar__tile {
+        height: 40px;
+        font-size: 0.9em;
+    }
+}

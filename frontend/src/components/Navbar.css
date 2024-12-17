@@ -1,0 +1,186 @@
+/* General Navigation Bar Styling */
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px -2px black;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    background-color: rgb(37, 177, 49);
+  }
+  
+  /* Navigation Icons */
+  .nav-icons {
+    display: flex;
+    text-decoration: none;
+    margin-left: 0;
+    color: white;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size for better visibility */
+  }
+  
+  /* Navigation Heading */
+  h1 {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+  
+  /* Responsive Button Container */
+  .button-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+  
+  /* Styling the "Book Appointment" button */
+  .book-appointment {
+    margin-right: 100px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid white;
+    font-size: 18px;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    border-radius: 50px;
+    text-decoration: none;
+    color: black; /* Text color */
+    font-weight: bold;
+    background-color: rgb(249, 252, 249);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .book-appointment:hover {
+    background-color: rgb(35, 192, 35);
+    color: white;
+  }
+  
+  /* Styling the icons */
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .instagram-icon {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733558.png');
+  }
+  
+  .whatsapp-icon {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733585.png');
+  }
+  
+  /* Logo in Navigation */
+  .nav img {
+    position: absolute;
+    left: 20px;
+    top: 15px; /* Adjust positioning */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    /* Adjust nav for smaller screens */
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    /* Align icons and button for mobile */
+    .button-container {
+      display: flex;
+      /*position: static;*/
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px; 
+      margin-top: 10px;
+      justify-content: flex-start;
+      gap: 10px; /* Reduce gap */
+    }
+  
+    .book-appointment {
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 25px; /* Smaller radius for compact look */
+    }
+  
+    /* Icons */
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .nav-icons {
+      font-size: 11px;
+      gap: 5px; /* Closer spacing for smaller screens */
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-left: 50px; /* Smaller heading size */
+    }
+  
+    .nav img {
+      position: absolute;
+      top: 23px;
+      width: 35px;
+      height: 35px; /* Smaller logo size */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Stack items for very small screens */
+    .nav {
+      align-items: center;
+    }
+  
+    h1 {
+      position: relative;
+      font-size: 8px;
+      margin-left: 10px;
+      margin-right: 170px;
+      margin-top: 20px;
+    }
+  
+    .button-container {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .book-appointment {
+      margin-right: 30px;
+      width: 100%; /* Full width button */
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .nav img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

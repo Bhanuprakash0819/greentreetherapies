@@ -1,0 +1,102 @@
+/* General Styling */
+.body {
+  display: flex;
+  position: relative;
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent scrolling if content exceeds the viewport */
+}
+
+/* Styling for the background image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Covers entire width */
+  height: 100%; /* Covers entire height */
+  object-fit: cover; /* Ensures image scales nicely */
+  opacity: 0.8; /* Makes the image semi-transparent */
+  z-index: -1; /* Sends the image behind all other elements */
+}
+
+/* Styling for content over the background */
+.body * {
+  position: relative;
+  /*z-index: 1; /* Ensures any content inside `.body` appears above the background image */
+  color: black; /* Adjust text color for visibility */
+}
+
+/* Flex container for "therapies" section */
+.therapies {
+  display: flex;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  /*margin: 20px auto; /* Centered with dynamic spacing */
+  position: absolute;
+left: 30px;
+  top: 100px;
+  gap: 20px; /* Add space between items */
+}
+
+/* Links in the body */
+.body a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* Navbar styling */
+.navbar-links {
+  display: flex;
+  position: absolute; /* Keep navbar fixed at the top */
+  top: 0;
+  width: 100%; /* Full-width navbar */
+  padding: 10px 180px;
+  list-style: none;
+  gap: 40px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Add slight background color for better visibility */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: lightgreen; /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+      flex-direction: column; /* Stack links vertically */
+      gap: 10px;
+      padding: 20px 40px;
+      align-items: center; /* Add padding for touch-friendly spacing */
+  }
+
+  .therapies {
+      margin-left: 0;
+      position: absolute; /* Reset margin for smaller screens */
+      top: 50px;
+      left: 5px;
+      gap: 15px;
+  }
+
+  .body a {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .navbar-links a {
+      font-size: 16px; /* Slightly smaller font for mobile */
+  }
+}

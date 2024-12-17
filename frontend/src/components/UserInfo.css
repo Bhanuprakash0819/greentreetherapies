@@ -1,0 +1,112 @@
+/* UserInfo.css */
+
+/* General Styling - Applies to both web and mobile */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Center the form in the middle of the page */
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the form */
+.user-info-form {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.user-info-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Style for input fields */
+.user-info-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.user-info-form input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Style for the button */
+.user-info-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-info-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .user-info-form {
+        padding: 15px;
+    }
+
+    .user-info-form h2 {
+        font-size: 1.2rem;
+    }
+
+    .user-info-form button {
+        font-size: 0.9rem;
+    }
+
+    .user-info-form input {
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional Adjustments for Larger Screens */
+@media (min-width: 1200px) {
+    .user-info-form {
+        max-width: 500px;
+        padding: 30px 40px;
+    }
+
+    .user-info-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .user-info-form input {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    .user-info-form button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
