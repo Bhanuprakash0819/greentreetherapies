@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -7,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-const mongoURI = "mongodb+srv://greentreetherapies:greentree123@greentree.2eonq.mongodb.net/greentree";
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -72,7 +73,10 @@ app.post('/api/bookings', async (req, res) => {
         res.status(500).send("Error saving booking");
     }
 });
-const adminCredentials = { username: 'admin', password: 'admin' };
+const adminCredentials = {
+    username: process.env.ADMIN_USERNAME,
+    password: process.env.ADMIN_PASSWORD,
+};
 
 app.post('/api/admin/login', (req, res) => {
     const { username, password } = req.body;
@@ -85,7 +89,7 @@ app.post('/api/admin/login', (req, res) => {
 });
 
 // Start the server
-const PORT = 5000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
