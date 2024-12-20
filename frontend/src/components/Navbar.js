@@ -12,8 +12,7 @@ const Navbar = () => {
             </div>
             <div className="button-container">
   <Link to="/therapies" className="book-appointment">Book Appointment</Link>
-  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon instagram-icon"></a>
-  <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer" className="icon whatsapp-icon"></a>
+  
 </div>
 
         </nav>

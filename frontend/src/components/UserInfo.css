@@ -11,9 +11,11 @@ body {
 .form-container {
     display: flex;
     align-items: center;
+    margin-top: 20px;
     justify-content: center;
     height: 100vh; /* Full viewport height */
     padding: 20px;
+    background: linear-gradient(to bottom, #d4fc79, #96e6a1);;
     box-sizing: border-box;
 }
 

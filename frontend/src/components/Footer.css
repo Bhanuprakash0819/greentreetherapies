@@ -1,10 +1,79 @@
+/* Footer Container */
 .footer {
-    width: 100%;
-    background-color: #333; /* Example background */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: static; /* Change to fixed if you want it always visible */
+  background-color: rgb(37, 177, 49);; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 30px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top */
+}
+
+/* Footer Content */
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer Title */
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Footer Description */
+.footer-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+/* Footer Links Container */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+/* Individual Footer Links */
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  transition: color 0.3s ease;
+}
+
+/* Icon Styling */
+.footer-link i {
+  font-size: 20px;
+}
+
+/* Hover Effects for Links */
+.footer-link:hover {
+  color: #4caf50; /* Green hover color */
+  text-decoration: underline;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  font-size: 14px;
+  color: #dcdcdc;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+      flex-direction: column;
+      gap: 20px;
   }
-  
-  
+
+  .footer-description {
+      font-size: 14px;
+  }
+}

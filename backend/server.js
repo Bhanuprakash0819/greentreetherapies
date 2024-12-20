@@ -51,6 +51,7 @@ app.delete('/api/bookings/:id', async (req, res) => {
 });
 
 
+
 // Add a new booking
 app.post('/api/bookings', async (req, res) => {
     const { name, contact, childName, childAge, therapy, date, time } = req.body;

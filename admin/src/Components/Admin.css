@@ -1,49 +1,194 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #d4fc79, #96e6a1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Admin container */
 .admin-container {
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.admin-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.admin-table th, .admin-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     text-align: center;
 }
 
-.admin-table th {
-    background-color: #f4f4f4;
-    color: #333;
+/* Navbar styles */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
 }
 
-.delete-btn {
-    padding: 5px 10px;
-    background-color: red;
+.admin-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.admin-header .logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.admin-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background: #ff4d4d;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #ff1a1a;
+}
+
+/* Admin table */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.admin-table th {
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background: #f1f1f1;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .delete-btn:hover {
-    background-color: darkred;
+    background: #ff1a1a;
 }
 
+/* Error message */
 .error {
     color: red;
-    font-weight: bold;
-    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Media queries for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .admin-header h1 {
+        font-size: 18px;
+    }
+
+    .logout-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Media queries for screens up to 480px */
+@media screen and (max-width: 480px) {
+    body {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .admin-container {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .admin-header {
+        text-align: center;
+    }
+
+    .admin-header .logo {
+        align-items: center;
+    }
+
+    .admin-header .logo img {
+        height: 30px;
+        margin-bottom: 5px;
+        border-radius: 50%;
+    }
+
+    .admin-header h1 {
+        font-size: 20px;
+    }
+
+    .logout-btn {
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .admin-table {
+        font-size: 12px;
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 6px;
+    }
+
+    .admin-table th {
+        font-size: 12px;
+    }
+
+    .delete-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .error {
+        font-size: 14px;
+    }
 }

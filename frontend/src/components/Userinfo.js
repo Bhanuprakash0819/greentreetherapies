@@ -34,21 +34,21 @@ const UserInfo = () => {
                 <h2>Enter Your Details</h2>
                 <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Parent Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
                 />
                 <input
                     type="text"
-                    placeholder="Contact (10-digit Mobile Number)"
+                    placeholder="10-digit Mobile Number"
                     value={contact}
                     onChange={(e) => setContact(e.target.value)}
                     required
                 />
                 <input
                     type="text"
-                    placeholder="Child's Name (if applicable)"
+                    placeholder="Child's Name"
                     value={childName}
                     onChange={(e) => setChildName(e.target.value)}
                 />
