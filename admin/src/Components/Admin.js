@@ -15,7 +15,7 @@ const Admin = () => {
 
     const fetchBookings = async () => {
         try {
-            const response = await fetch('https://green-tree-backend.onrender.com', {
+            const response = await fetch('https://green-tree-backend.onrender.com/api/bookings', {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                 },
@@ -32,7 +32,7 @@ const Admin = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`https://green-tree-backend.onrender.com/${id}`, {
+            const response = await fetch(`https://green-tree-backend.onrender.com/api/bookings/${id}`, {
                 method: 'DELETE',
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,

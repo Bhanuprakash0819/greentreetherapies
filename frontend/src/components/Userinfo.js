@@ -21,7 +21,7 @@ const UserInfo = () => {
 
         const booking = { name, contact, childName, childAge, therapy, date, time };
 
-        fetch('https://green-tree-backend.onrender.com', {
+        fetch('https://green-tree-backend.onrender.com/api/bookings', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(booking),

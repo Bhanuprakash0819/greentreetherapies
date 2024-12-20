@@ -17,7 +17,7 @@ const Booking = () => {
     useEffect(() => {
         const fetchBookedSlots = async () => {
             try {
-                const response = await fetch('https://green-tree-backend.onrender.com');
+                const response = await fetch('https://green-tree-backend.onrender.com/api/bookings');
                 const data = await response.json();
                 setBookedSlots(data);
             } catch (error) {
