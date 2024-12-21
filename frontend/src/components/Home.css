@@ -97,7 +97,7 @@
   overflow: hidden;
   cursor: pointer;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(126, 235, 93, 0.87);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -133,12 +133,13 @@
 
 .therapy-title {
   font-size: 20px;
-  color: #4caf50;
+  color: #262726;
   margin: 10px 0;
 }
 
 .therapy-info {
   font-size: 14px;
+  font-style: italic;
   color: #333;
   padding: 10px;
 }
@@ -189,7 +190,7 @@
     margin-left: 0px;
   }
   .therapy-card {
-    width: 100%;
+    width: 70%;
   }
   .therapies-heading {
     font-size: 24px;
@@ -197,7 +198,8 @@
     margin-right: 0px;
   }
   .therapy-info {
-    font-size: 12px;
+    font-size: 14px;
+    font-style: italic;
   }
   .therapies-list{
     display: flex;
