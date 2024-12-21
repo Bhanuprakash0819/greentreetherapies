@@ -49,9 +49,9 @@ const Home = () => {
         <Link to="/aboutus" className="therapies-link">About Us</Link>
       </li>
     </ul>
-          <h2 className="therapies-heading">What is Greentree Therapies?</h2>
+          <h2 className="therapies-heading">What is Green Tree Therapies?</h2>
           <p className="therapies-paragraph">
-            Greentree Therapies is a holistic center dedicated to enhancing the physical, emotional, and social well-being of children and adults. 
+            Green Tree Therapies is a holistic center dedicated to enhancing the physical, emotional, and social well-being of children and adults. 
             Our programs combine evidence-based practices and innovative approaches to help individuals reach their full potential.
           </p>
         </div>

@@ -46,18 +46,23 @@ h2 {
 
 .therapy-image img {
     width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
 }
 
 .therapy-details {
-    padding: 15px;
+    padding: 10px;
 }
 
 .therapy-details h3 {
+    border: 1px solid rgb(49, 49, 49);
+    padding: 10px ;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(51, 50, 50);
     margin: 0 0 10px 0;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 .therapy-details p {
