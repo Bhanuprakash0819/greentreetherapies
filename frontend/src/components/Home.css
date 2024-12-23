@@ -36,7 +36,7 @@
 
 .therapies-link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   color: rgb(78, 70, 70);
   font-weight: bold;
   margin-bottom: 10px;
@@ -64,8 +64,6 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Main Content */
 .main-heading {
   text-align: center;
   font-size: 36px;
@@ -109,25 +107,6 @@
 .therapy-image {
   width: 100%;
   height: 150px;
- 
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .admin-header h1 {
-        font-size: 18px;
-    }
-
-    .logout-btn {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    .admin-table th,
-    .admin-table td {
-        font-size: 12px;
-        padding: 8px;
-    }
-}
 
 }
 
@@ -180,17 +159,28 @@
     font-size: 14px;
     padding: 0 10px;
   }
+  .therapy-items {
+    background: linear-gradient(to bottom, #12f055, #bae0c0);;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s;
+  }
   .therapies-heading {
     font-size: 20px;
     margin-top: 20px;
     margin-right: 50px;
   }
   .therapies-link{
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 0px;
   }
   .therapy-card {
-    width: 70%;
+    width: 80%;
   }
   .therapies-heading {
     font-size: 24px;
