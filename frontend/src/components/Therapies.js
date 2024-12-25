@@ -9,9 +9,9 @@ const therapies = [
         image: require('./Assets/Behavior.jpeg')
     },
     {
-        name: 'Early Intervention',
-        description: 'Early intervention helps address developmental delays in children at an early stage.',
-        image: require('./Assets/Early intervention.jpeg')
+        name: 'Speech Therapy',
+        description: 'Speech therapy helps improve communication and language skills.',
+        image: require('./Assets/Speech.jpeg')
     },
     {
         name: 'Occupational Therapy',
@@ -19,14 +19,14 @@ const therapies = [
         image: require('./Assets/Occupational.jpeg')
     },
     {
+        name: 'Early Intervention',
+        description: 'Early intervention helps address developmental delays in children at an early stage.',
+        image: require('./Assets/Early intervention.jpeg')
+    },
+    {
         name: 'Physiotherapy',
         description: 'Physiotherapy enhances physical movement and alleviates pain.',
         image: require('./Assets/Physiotherapy.jpeg')
-    },
-    {
-        name: 'Speech Therapy',
-        description: 'Speech therapy helps improve communication and language skills.',
-        image: require('./Assets/Speech.jpeg')
     }
 ];
 

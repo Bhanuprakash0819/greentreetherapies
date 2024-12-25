@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './UserInfo.css'; // Link the external CSS
 
 const UserInfo = () => {
     const location = useLocation();
+    const navigate = useNavigate(); // Initialize useNavigate
     const { therapy, date, time } = location.state;
 
     const [name, setName] = useState('');
@@ -14,18 +15,28 @@ const UserInfo = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        // Validate contact number
         if (!/^[0-9]{10}$/.test(contact)) {
             alert('Please enter a valid 10-digit mobile number.');
             return;
         }
 
+        // Prepare booking object
         const booking = { name, contact, childName, childAge, therapy, date, time };
 
+        // Post the booking data
         fetch('https://green-tree-backend.onrender.com/api/bookings', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(booking),
-        }).then(() => alert('Booking confirmed!'));
+        }).then(() => {
+           // alert('Booking confirmed!');
+            // Redirect to successful booking page
+            navigate('/booking-success', { state: { name, therapy, date, time } });
+        }).catch((error) => {
+            alert('An error occurred while confirming your booking.');
+            console.error('Error:', error);
+        });
     };
 
     return (

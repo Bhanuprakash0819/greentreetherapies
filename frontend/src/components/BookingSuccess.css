@@ -1,0 +1,101 @@
+/* General styles for the success page */
+.success-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #77e94a, #7bf896);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Success message styles */
+.success-container h1 {
+    font-size: 48px;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.success-container p {
+    font-size: 20px;
+    color: rgb(27, 26, 26);
+    align-items: center;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Button styles */
+.success-container .home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 30px;
+    font-size: 18px;
+    color: #151815;
+    background: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.success-container .home-button:hover {
+    background: #f1f1f1;
+    color: #7ce652;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .success-container h1 {
+        font-size: 36px;
+        margin-right: 100px;
+    }
+
+    .success-container p {
+        font-size: 18px;
+    }
+
+    .success-container .home-button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .success-container h1 {
+        font-size: 28px;
+
+    }
+
+    .success-container p {
+        margin-top: 2px;
+        font-size: 16px;
+    }
+    .success-container {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom right, #77e94a, #7bf896);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .success-container .home-button {
+        font-size: 16px;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+}

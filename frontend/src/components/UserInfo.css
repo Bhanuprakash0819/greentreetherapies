@@ -112,3 +112,25 @@ body {
         padding: 12px;
     }
 }
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .user-info-form {
+        padding: 20px;
+    }
+
+    .user-info-form h2 {
+        font-size: 1.2rem;
+    }
+
+    .user-info-form button {
+        font-size: 0.9rem;
+    }
+
+    .user-info-form input {
+        font-size: 0.9rem;
+        padding: 10px 5px;
+    }
+}

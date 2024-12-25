@@ -132,6 +132,7 @@ body {
 }
 
 /* Media queries for screens up to 480px */
+/* Media queries for screens up to 480px */
 @media screen and (max-width: 480px) {
     body {
         justify-content: center;
@@ -168,15 +169,21 @@ body {
         margin-top: 5px;
     }
 
+    /* Make the table fully visible */
+    .admin-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .admin-table {
+        min-width: 40px;
         font-size: 12px;
         margin-top: 10px;
-        overflow-x: auto;
     }
 
     .admin-table th,
     .admin-table td {
-        padding: 6px;
+        padding: 0px;
     }
 
     .admin-table th {
@@ -192,3 +199,4 @@ body {
         font-size: 14px;
     }
 }
+

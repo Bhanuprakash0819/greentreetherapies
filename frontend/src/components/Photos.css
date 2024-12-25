@@ -1,0 +1,136 @@
+/* General Styles */
+.photos-container {
+    padding: 20px;
+    text-align: center;
+    background: radial-gradient(circle, #ffefba, #ffffff);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.photos-title {
+    font-size: 3rem;
+    color: #262629;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider Styles */
+.photos-slider {
+    position: relative;
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(145deg, #f5f7fa, #c3cfe2);
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    min-width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.nav-button:hover {
+    background-color: #6c63ff;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Indicators */
+.slider-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #6c63ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .photos-title {
+        font-size: 2.5rem;
+    }
+
+    .slider-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photos-title {
+        font-size: 2rem;
+    }
+    .photos-slider {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(145deg, #f5f7fa, #c3cfe2);
+    }
+    .slider-image {
+        height: 400px;
+    }
+}
