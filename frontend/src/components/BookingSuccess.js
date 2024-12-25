@@ -13,7 +13,7 @@ const BookingSuccess = () => {
             <p>Thank you, <strong>{name}</strong>, for booking a <strong>{therapy}</strong> session.</p>
             <p>Your session is scheduled for <strong>{date}</strong> at <strong>{time}</strong>.</p>
            <p> Our team will contact you as soon as possible.</p>
-           <p>If you have any Queries</p>
+           <p>If you have any Queries, Please reach out to below mentioned phone numbers</p>
             <button
                 className="home-button"
                 onClick={() => navigate('/')}
