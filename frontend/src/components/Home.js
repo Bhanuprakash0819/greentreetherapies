@@ -63,7 +63,7 @@ const Home = () => {
       {/* Main Content */}
       <h1 className="main-heading">Welcome to Our Therapy Center</h1>
       <p className="main-paragraph">
-      where we focus on nurturing every child’s growth and potential. Our programs are designed to support holistic development in a caring and encouraging environment.
+      Where we focus on nurturing every child’s growth and potential. Our programs are designed to support holistic development in a caring and encouraging environment.
       </p>
 
       {/* Therapy Sections */}

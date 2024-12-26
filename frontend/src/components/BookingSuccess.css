@@ -75,7 +75,19 @@
         font-size: 28px;
         
     }
-
+    .success-container {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom right, #77e94a, #7bf896);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
     .success-container p {
         margin-top: 2px;
         font-size: 16px;

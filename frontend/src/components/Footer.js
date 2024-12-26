@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='footer-content'>
                 <h3 className='footer-title'>Support Us</h3>
                 <p className='footer-description'>
-                    Join us in our mission to bring holistic therapies and support to the community. Follow us on Instagram, visit us at our location, or contact us directly.
+                Your support helps us create meaningful opportunities for children to grow, learn, and thrive. Follow us on Instagram, visit us at our location, or contact us directly.
                 </p>
                 <div className='footer-links'>
                     {/* Instagram Link */}
