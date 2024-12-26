@@ -11,7 +11,7 @@ const Login = () => {
 
     const handleLogin = async (event) => {
         event.preventDefault();
-        if (username === 'admin' && password === 'admin') {
+        if (username === 'greentree' && password === 'greentree@123') {
             // Clear error and navigate to admin dashboard
             setError('');
             navigate('/admin/dashboard'); // Navigate to admin dashboard
