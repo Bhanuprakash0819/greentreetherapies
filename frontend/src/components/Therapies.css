@@ -9,7 +9,7 @@
 
 .therapy-containers h2 {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #333;
 }
 
@@ -106,7 +106,59 @@
     .therapy-detail p {
         font-size: 0.9rem;
     }
+    .therapy-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(104, 231, 92, 0.856);
+        overflow: hidden;
+        width: 60%;
+        max-width: 800px;
+    }
+    .therapy-detail button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 480px){
+    .therapy-items {
+        flex-direction: column;
+    }
 
+    .therapy-img {
+        min-width: 100%;
+    }
+
+    .therapy-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .therapy-detail {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .therapy-detail h3 {
+        font-size: 1.5rem;
+    }
+
+    .therapy-detail p {
+        font-size: 0.9rem;
+    }
+    .therapy-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(104, 231, 92, 0.856);
+        overflow: hidden;
+        width: 100%;
+        max-width: 800px;
+    }
     .therapy-detail button {
         font-size: 0.9rem;
         padding: 8px 16px;

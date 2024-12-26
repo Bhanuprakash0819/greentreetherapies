@@ -3,7 +3,7 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(241, 240, 240)}
+  background:linear-gradient(to bottom, #fbfcfb, #96e6a1);}
 
 /* Navbar */
 .therapies {
@@ -14,9 +14,19 @@
   padding: 20px;
   background: linear-gradient(to bottom, #75f045, #96e6a1);
   color: black;
-  gap: 20px;
+  gap: 10px;
 }
-
+.therapy-items {
+  background: linear-gradient(to bottom, #12f055, #bae0c0);;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.3s;
+}
 .therapies-left {
   width: 60%;
 }
@@ -60,7 +70,7 @@
   width: 20%;
 }
 
-.greentree-image {
+.greentree-imag {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -103,7 +113,7 @@
 
 .therapy-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(108, 231, 97, 0.89);
 }
 
 .therapy-image {
@@ -135,7 +145,7 @@
   .therapies-left, .therapies-right {
     width: 100%;
   }
-  .greentree-image {
+  .greentree-imag {
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -160,24 +170,14 @@
     font-size: 14px;
     padding: 0 10px;
   }
-  .therapy-items {
-    background: linear-gradient(to bottom, #12f055, #bae0c0);;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 95%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    transition: transform 0.3s;
-  }
+  
   .therapies-heading {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 50px;
   }
   .therapies-paragraph p{
-    margin-top: 5px;
+    margin-top: 0px;
   }
   .therapies-link{
     font-size: 18px;
@@ -195,7 +195,7 @@
     gap: 10px;
     margin-left: 0px;
   }
-  .greentree-image {
+  .greentree-imag {
     width: 200px;
     height: 200px;
     border-radius: 10px;

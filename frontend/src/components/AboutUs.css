@@ -1,0 +1,118 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to bottom, #75f045, #96e6a1);
+    color: #333;
+}
+
+/* Container Styling */
+.about-container {
+    max-width: 1200px;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Image Container */
+.green-img {
+    width: 20%;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.greentree-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(100%) contrast(120%);
+    border-radius: 10px;
+}
+
+.greentree-image:hover {
+    transform: scale(1.05);
+    filter: brightness(100%) contrast(120%);
+}
+
+/* Paragraph Container */
+.para {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.para p {
+    margin: 15px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.para p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.para p:last-child {
+    color: #1a1d1b;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .para {
+        padding: 15px;
+    }
+    .green-img {
+        width: 30%;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .para p {
+        font-size: 16px;
+    }
+
+    .greentree-image {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .para {
+        padding: 15px;
+    }
+    .para p:first-child {
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+    }
+    .para p {
+        font-size: 14px;
+    }
+    .green-img {
+        width: 50%;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}

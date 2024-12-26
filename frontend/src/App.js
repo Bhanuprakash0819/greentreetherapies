@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Therapy from './components/Therapy';
 import Photos from './components/Photos';
 import BookingSuccess from './components/BookingSuccess';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/therapy" element={<Therapy />} />
                 <Route path="/photos" element={<Photos />} />
+                <Route path="/aboutus" element={<AboutUs />} />
                 <Route path="/therapies" element={<Therapies />} />
                 <Route path="/booking" element={<Booking />} />
                 <Route path="/userinfo" element={<UserInfo />} />

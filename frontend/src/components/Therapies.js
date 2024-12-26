@@ -5,27 +5,27 @@ import './Therapies.css';
 const therapies = [
     {
         name: 'Behavioural Therapy',
-        description: 'Behavioral therapy focuses on modifying harmful behaviors and enhancing positive actions.',
+        description: 'Behavioral therapy focuses on modifying harmful behaviors and enhancing positive actions  -  45min',
         image: require('./Assets/Behavior.jpeg')
     },
     {
         name: 'Speech Therapy',
-        description: 'Speech therapy helps improve communication and language skills.',
+        description: 'Speech therapy helps improve communication and language skills  -  45min',
         image: require('./Assets/Speech.jpeg')
     },
     {
         name: 'Occupational Therapy',
-        description: 'Occupational therapy aids in improving daily living and work skills.',
+        description: 'Occupational therapy aids in improving daily living and work skills  -  45min',
         image: require('./Assets/Occupational.jpeg')
     },
     {
         name: 'Early Intervention',
-        description: 'Early intervention helps address developmental delays in children at an early stage.',
+        description: 'Early intervention helps address developmental delays in children at an early stage  -  45min',
         image: require('./Assets/Early intervention.jpeg')
     },
     {
         name: 'Physiotherapy',
-        description: 'Physiotherapy enhances physical movement and alleviates pain.',
+        description: 'Physiotherapy enhances physical movement and alleviates pain  -  45min',
         image: require('./Assets/Physiotherapy.jpeg')
     }
 ];

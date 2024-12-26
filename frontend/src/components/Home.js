@@ -56,14 +56,14 @@ const Home = () => {
           </p>
         </div>
         <div className="therapies-right">
-          <img src={greentree} alt="Greentree" className="greentree-image" />
+          <img src={greentree} alt="Greentree" className="greentree-imag" />
         </div>
       </div>
      
       {/* Main Content */}
       <h1 className="main-heading">Welcome to Our Therapy Center</h1>
       <p className="main-paragraph">
-        Discover a variety of therapies designed to enhance your physical and mental well-being.
+      where we focus on nurturing every child’s growth and potential. Our programs are designed to support holistic development in a caring and encouraging environment.
       </p>
 
       {/* Therapy Sections */}
