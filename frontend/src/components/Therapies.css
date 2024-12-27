@@ -28,7 +28,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(104, 231, 92, 0.856);
     overflow: hidden;
-    width: 100%;
+    width: 50%;
     max-width: 800px;
 }
 .therapy-items:hover {
